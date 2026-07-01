@@ -13,13 +13,12 @@ interface PortfolioItem {
   location?: string;
 }
 
-// Demo data mapping actual Instagram posts and Google details to correct categories
 const demoPortfolioItems: PortfolioItem[] = [
   {
     id: 1,
     title: 'Maathesh & Swetha\'s Union',
     category: 'Wedding',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80', // Styled representational image
+    image: '/images/insta_wedding_1.jpg',
     aspectRatio: 'h-[450px]',
     source: 'Instagram',
     likes: '412',
@@ -29,7 +28,7 @@ const demoPortfolioItems: PortfolioItem[] = [
     id: 2,
     title: 'Golden Hour Beach Romance',
     category: 'Pre Wedding',
-    image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_prewedding_1.jpg',
     aspectRatio: 'h-[320px]',
     source: 'Instagram',
     likes: '528',
@@ -39,7 +38,7 @@ const demoPortfolioItems: PortfolioItem[] = [
     id: 3,
     title: 'The Sacred Exchange',
     category: 'Engagement',
-    image: 'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_engagement_1.jpg',
     aspectRatio: 'h-[400px]',
     source: 'Instagram',
     likes: '298',
@@ -49,7 +48,7 @@ const demoPortfolioItems: PortfolioItem[] = [
     id: 4,
     title: 'ECR Blue House Portrait',
     category: 'Couple Portraits',
-    image: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_couple_1.jpg',
     aspectRatio: 'h-[480px]',
     source: 'Instagram',
     likes: '342',
@@ -59,7 +58,7 @@ const demoPortfolioItems: PortfolioItem[] = [
     id: 5,
     title: 'The Silk Bride',
     category: 'Wedding',
-    image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_wedding_2.jpg',
     aspectRatio: 'h-[420px]',
     source: 'Studio',
     location: 'Palavakkam Studio'
@@ -68,7 +67,7 @@ const demoPortfolioItems: PortfolioItem[] = [
     id: 6,
     title: 'Tranquil Water Splash Portrait',
     category: 'Couple Portraits',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_couple_2.jpg',
     aspectRatio: 'h-[360px]',
     source: 'Instagram',
     likes: '284',
@@ -78,7 +77,7 @@ const demoPortfolioItems: PortfolioItem[] = [
     id: 7,
     title: 'Fine-Art Maternity Glow',
     category: 'Maternity',
-    image: 'https://images.unsplash.com/photo-1519689680058-324335c77ebe?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_maternity_1.jpg',
     aspectRatio: 'h-[400px]',
     source: 'Google',
     location: 'Palavakkam Studio'
@@ -87,7 +86,7 @@ const demoPortfolioItems: PortfolioItem[] = [
     id: 8,
     title: 'Dreaming in Wool Newborn',
     category: 'Baby Shoot',
-    image: 'https://images.unsplash.com/photo-1537673156864-5d2de08cf236?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_baby_1.jpg',
     aspectRatio: 'h-[350px]',
     source: 'Google',
     location: 'Home Shoot, Chennai'
@@ -96,10 +95,37 @@ const demoPortfolioItems: PortfolioItem[] = [
     id: 9,
     title: 'Luxury Reception Illuminations',
     category: 'Events',
-    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_event_1.jpg',
     aspectRatio: 'h-[460px]',
     source: 'Google',
     location: 'MRC Nagar, Chennai'
+  },
+  {
+    id: 10,
+    title: 'Royal Mandapam Vows',
+    category: 'Wedding',
+    image: '/images/insta_wedding_3.jpg',
+    aspectRatio: 'h-[380px]',
+    source: 'Instagram',
+    location: 'Chennai'
+  },
+  {
+    id: 11,
+    title: 'Beachside Candid Exchange',
+    category: 'Pre Wedding',
+    image: '/images/insta_prewedding_2.jpg',
+    aspectRatio: 'h-[340px]',
+    source: 'Instagram',
+    location: 'ECR Beach'
+  },
+  {
+    id: 12,
+    title: 'Traditional Muhurtham',
+    category: 'Wedding',
+    image: '/images/insta_wedding_4.jpg',
+    aspectRatio: 'h-[440px]',
+    source: 'Instagram',
+    location: 'Chennai'
   }
 ];
 

@@ -3,7 +3,7 @@ import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Portfolio from './components/Portfolio';
+import Portfolio from './components/PortfolioDemo';
 import Services from './components/Services';
 import Packages from './components/Packages';
 import Testimonials from './components/Testimonials';
