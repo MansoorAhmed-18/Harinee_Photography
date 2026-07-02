@@ -106,40 +106,44 @@ export default function InstagramFeed() {
         {/* Posts Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {instagramPosts.map((post) => (
-            <motion.a
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 0.5 }}
+            <a
               key={post.id}
               href="https://www.instagram.com/harinee_photography"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative group aspect-square overflow-hidden bg-zinc-900 border border-white/5"
+              className="relative group aspect-square overflow-hidden bg-zinc-900 border border-white/5 block"
             >
-              {/* Post Image */}
-              <img
-                src={post.image}
-                alt={`Instagram Post ${post.id}`}
-                loading="lazy"
-                className="w-full h-full object-cover zoom-img select-none"
-              />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.5 }}
+                className="w-full h-full relative"
+              >
+                {/* Post Image */}
+                <img
+                  src={post.image}
+                  alt={`Instagram Post ${post.id}`}
+                  loading="lazy"
+                  className="w-full h-full object-cover zoom-img select-none"
+                />
 
-              {/* Dark Hover Overlay */}
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-6 z-10" />
+                {/* Dark Hover Overlay */}
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-6 z-10" />
 
-              {/* Post Stats (Visible on Hover) */}
-              <div className="absolute inset-0 flex items-center justify-center gap-4 md:gap-6 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 z-20 scale-95 group-hover:scale-100">
-                <div className="flex items-center gap-1.5 hover:text-gold transition-colors">
-                  <Heart className="w-4 h-4 md:w-5 md:h-5 fill-white group-hover:fill-transparent" />
-                  <span className="text-xs md:text-sm font-semibold tracking-wider">{post.likes}</span>
+                {/* Post Stats (Visible on Hover) */}
+                <div className="absolute inset-0 flex items-center justify-center gap-4 md:gap-6 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 z-20 scale-95 group-hover:scale-100">
+                  <div className="flex items-center gap-1.5 hover:text-gold transition-colors">
+                    <Heart className="w-4 h-4 md:w-5 md:h-5 fill-white group-hover:fill-transparent" />
+                    <span className="text-xs md:text-sm font-semibold tracking-wider">{post.likes}</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 hover:text-gold transition-colors">
+                    <MessageCircle className="w-4 h-4 md:w-5 md:h-5 fill-white group-hover:fill-transparent" />
+                    <span className="text-xs md:text-sm font-semibold tracking-wider">{post.comments}</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-1.5 hover:text-gold transition-colors">
-                  <MessageCircle className="w-4 h-4 md:w-5 md:h-5 fill-white group-hover:fill-transparent" />
-                  <span className="text-xs md:text-sm font-semibold tracking-wider">{post.comments}</span>
-                </div>
-              </div>
-            </motion.a>
+              </motion.div>
+            </a>
           ))}
         </div>
       </div>

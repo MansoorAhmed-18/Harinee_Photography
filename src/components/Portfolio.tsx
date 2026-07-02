@@ -101,7 +101,6 @@ const categories = [
   'All',
   'Wedding',
   'Pre Wedding',
-  'Engagement',
   'Couple Portraits',
   'Baby Shoot',
   'Maternity',
@@ -228,12 +227,16 @@ export default function Portfolio() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-md p-4"
+            onClick={() => setLightboxIndex(null)}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4 cursor-zoom-out"
           >
             {/* Close Button */}
             <button
-              onClick={() => setLightboxIndex(null)}
-              className="absolute top-6 right-6 text-white/70 hover:text-gold transition-colors z-50 p-2"
+              onClick={(e) => {
+                e.stopPropagation();
+                setLightboxIndex(null);
+              }}
+              className="absolute top-6 right-6 text-white/70 hover:text-gold transition-colors z-50 p-2 cursor-pointer"
               aria-label="Close Lightbox"
             >
               <X className="w-6 h-6" />
@@ -241,8 +244,11 @@ export default function Portfolio() {
 
             {/* Previous Button */}
             <button
-              onClick={handlePrev}
-              className="absolute left-6 text-white/50 hover:text-gold transition-colors z-50 p-2 max-sm:left-2"
+              onClick={(e) => {
+                e.stopPropagation();
+                handlePrev();
+              }}
+              className="absolute left-6 text-white/50 hover:text-gold transition-colors z-50 p-2 max-sm:left-2 cursor-pointer"
               aria-label="Previous Image"
             >
               <ChevronLeft className="w-10 h-10 max-sm:w-8 max-sm:h-8" />
@@ -250,15 +256,21 @@ export default function Portfolio() {
 
             {/* Next Button */}
             <button
-              onClick={handleNext}
-              className="absolute right-6 text-white/50 hover:text-gold transition-colors z-50 p-2 max-sm:right-2"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleNext();
+              }}
+              className="absolute right-6 text-white/50 hover:text-gold transition-colors z-50 p-2 max-sm:right-2 cursor-pointer"
               aria-label="Next Image"
             >
               <ChevronRight className="w-10 h-10 max-sm:w-8 max-sm:h-8" />
             </button>
 
             {/* Lightbox Content */}
-            <div className="relative max-w-5xl max-h-[80vh] flex flex-col items-center">
+            <div 
+              className="relative max-w-5xl max-h-[80vh] flex flex-col items-center cursor-default"
+              onClick={(e) => e.stopPropagation()}
+            >
               <motion.img
                 key={lightboxIndex}
                 initial={{ opacity: 0, scale: 0.95 }}

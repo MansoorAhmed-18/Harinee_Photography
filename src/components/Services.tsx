@@ -9,52 +9,52 @@ interface ServiceItem {
 const services: ServiceItem[] = [
   {
     title: 'Wedding Photography',
-    image: '/images/portfolio_wedding.png',
+    image: '/images/insta_wedding_1.png',
     description: 'Cinematic storytelling covering your entire wedding day, from morning preparations to the reception celebrations.',
   },
   {
     title: 'Pre Wedding Photography',
-    image: '/images/portfolio_prewedding.png',
+    image: '/images/insta_prewedding_1.png',
     description: 'Romantic, luxury couple portraiture in stunning outdoor or heritage architectural locations before your big day.',
   },
   {
     title: 'Engagement Photography',
-    image: '/images/wedding_hero_2.png',
+    image: '/images/insta_engagement_1.png',
     description: 'Capturing the raw joy, rings, and emotional highlights of your commitment ceremony.',
   },
   {
     title: 'Couple Portraits',
-    image: '/images/wedding_hero_3.png',
+    image: '/images/insta_couple_1.png',
     description: 'Intimate, fine-art portraits capturing the unique connection, chemistry, and love between you and your partner.',
   },
   {
     title: 'Baby Photography',
-    image: '/images/portfolio_baby.png',
+    image: '/images/insta_baby_1.png',
     description: 'Adorable, soft-focused infant and toddler shoots using delicate props and comfortable studio environments.',
   },
   {
     title: 'Maternity Photography',
-    image: 'https://images.unsplash.com/photo-1519689680058-324335c77ebe?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_maternity_1.png',
     description: 'Celebrating the beautiful journey of motherhood with elegant, artistic silhouette and studio portraits.',
   },
   {
     title: 'Event Photography',
-    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_event_1.png',
     description: 'Professional coverage of corporate gatherings, birthday galas, anniversaries, and family celebrations.',
   },
   {
     title: 'Candid Photography',
-    image: 'https://images.unsplash.com/photo-1520856729845-df33f04e8254?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_couple_2.png',
     description: 'Unobtrusive, documentary-style photography capturing real, unprompted laughter, tears, and movements.',
   },
   {
     title: 'Traditional Photography',
-    image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_wedding_4.png',
     description: 'Classic posed portraits and ritualistic documentations preserving family lineages and traditional wedding rites.',
   },
   {
     title: 'Cinematic Videography',
-    image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80',
+    image: '/images/insta_wedding_3.png',
     description: 'High-definition wedding films, highlights, trailers, and documentaries capturing your day with cinema gear.',
   },
   {

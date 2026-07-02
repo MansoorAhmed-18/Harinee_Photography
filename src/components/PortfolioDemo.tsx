@@ -19,113 +19,113 @@ const demoPortfolioItems: PortfolioItem[] = [
     title: 'Maathesh & Swetha\'s Union',
     category: 'Wedding',
     image: '/images/insta_wedding_1.jpg',
-    aspectRatio: 'h-[450px]',
+    aspectRatio: 'h-[280px]',
     source: 'Instagram',
     likes: '412',
     location: 'Chennai, ECR'
   },
   {
     id: 2,
-    title: 'Golden Hour Beach Romance',
+    title: 'Love by the Waterfall',
     category: 'Pre Wedding',
     image: '/images/insta_prewedding_1.jpg',
-    aspectRatio: 'h-[320px]',
+    aspectRatio: 'h-[280px]',
     source: 'Instagram',
     likes: '528',
-    location: 'ECR Beach'
+    location: 'Kerala'
   },
   {
     id: 3,
-    title: 'The Sacred Exchange',
-    category: 'Engagement',
+    title: 'Graceful Steps of Connection',
+    category: 'Couple Portraits',
     image: '/images/insta_engagement_1.jpg',
-    aspectRatio: 'h-[400px]',
+    aspectRatio: 'h-[280px]',
     source: 'Instagram',
-    likes: '298',
-    location: 'Chennai Hall'
+    likes: '342',
+    location: 'Palavakkam Studio'
   },
   {
     id: 4,
-    title: 'ECR Blue House Portrait',
-    category: 'Couple Portraits',
+    title: 'Circular Arch Engagement',
+    category: 'Events',
     image: '/images/insta_couple_1.jpg',
-    aspectRatio: 'h-[480px]',
+    aspectRatio: 'h-[280px]',
     source: 'Instagram',
-    likes: '342',
-    location: 'Blue House, ECR'
+    likes: '528',
+    location: 'Chennai Hall'
   },
   {
     id: 5,
-    title: 'The Silk Bride',
+    title: 'Temple Vows under the Gopuram',
     category: 'Wedding',
     image: '/images/insta_wedding_2.jpg',
-    aspectRatio: 'h-[420px]',
+    aspectRatio: 'h-[280px]',
     source: 'Studio',
-    location: 'Palavakkam Studio'
+    location: 'Chennai Temple'
   },
   {
     id: 6,
-    title: 'Tranquil Water Splash Portrait',
+    title: 'Love Written In Every Page',
     category: 'Couple Portraits',
     image: '/images/insta_couple_2.jpg',
-    aspectRatio: 'h-[360px]',
+    aspectRatio: 'h-[300px]',
     source: 'Instagram',
     likes: '284',
-    location: 'Mahabalipuram'
-  },
-  {
-    id: 7,
-    title: 'Fine-Art Maternity Glow',
-    category: 'Maternity',
-    image: '/images/insta_maternity_1.jpg',
-    aspectRatio: 'h-[400px]',
-    source: 'Google',
     location: 'Palavakkam Studio'
   },
   {
+    id: 7,
+    title: 'Black & White Ocean Love',
+    category: 'Pre Wedding',
+    image: '/images/insta_maternity_1.jpg',
+    aspectRatio: 'h-[360px]',
+    source: 'Google',
+    location: 'ECR Beach'
+  },
+  {
     id: 8,
-    title: 'Dreaming in Wool Newborn',
+    title: 'Dreaming in Music Baby Shoot',
     category: 'Baby Shoot',
     image: '/images/insta_baby_1.jpg',
-    aspectRatio: 'h-[350px]',
+    aspectRatio: 'h-[280px]',
     source: 'Google',
     location: 'Home Shoot, Chennai'
   },
   {
     id: 9,
-    title: 'Luxury Reception Illuminations',
-    category: 'Events',
+    title: 'Sunset Back to Back Silhouette',
+    category: 'Pre Wedding',
     image: '/images/insta_event_1.jpg',
-    aspectRatio: 'h-[460px]',
+    aspectRatio: 'h-[280px]',
     source: 'Google',
-    location: 'MRC Nagar, Chennai'
+    location: 'Mahabalipuram'
   },
   {
     id: 10,
-    title: 'Royal Mandapam Vows',
+    title: 'Tranquil Water Splash Portrait',
     category: 'Wedding',
     image: '/images/insta_wedding_3.jpg',
-    aspectRatio: 'h-[380px]',
+    aspectRatio: 'h-[360px]',
     source: 'Instagram',
-    location: 'Chennai'
+    location: 'Palavakkam Studio'
   },
   {
     id: 11,
-    title: 'Beachside Candid Exchange',
-    category: 'Pre Wedding',
+    title: 'Bridal Elegance on Steps',
+    category: 'Wedding',
     image: '/images/insta_prewedding_2.jpg',
-    aspectRatio: 'h-[340px]',
+    aspectRatio: 'h-[480px]',
     source: 'Instagram',
-    location: 'ECR Beach'
+    location: 'Kerala'
   },
   {
     id: 12,
-    title: 'Traditional Muhurtham',
+    title: 'Beachside Walk in Purple',
     category: 'Wedding',
     image: '/images/insta_wedding_4.jpg',
-    aspectRatio: 'h-[440px]',
+    aspectRatio: 'h-[450px]',
     source: 'Instagram',
-    location: 'Chennai'
+    location: 'ECR Beach'
   }
 ];
 
@@ -133,10 +133,8 @@ const categories = [
   'All',
   'Wedding',
   'Pre Wedding',
-  'Engagement',
   'Couple Portraits',
   'Baby Shoot',
-  'Maternity',
   'Events'
 ];
 
@@ -175,19 +173,19 @@ export default function PortfolioDemo() {
   };
 
   return (
-    <section id="portfolio-demo" className="py-24 md:py-32 bg-black relative border-b border-white/5">
+    <section id="portfolio" className="py-24 md:py-32 bg-black relative border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        
+
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-xs uppercase tracking-[0.3em] text-gold font-light block mb-3">
             Real Work Demo
           </span>
           <h2 className="text-3xl md:text-5xl font-light text-white text-serif uppercase tracking-wide">
-            Instagram & Google Portfolio
+            PORTFOLIO
           </h2>
-          <p className="text-xs text-white/40 mt-3 font-light tracking-wide max-w-lg mx-auto">
-            This demo maps actual captured photos from your Instagram feed and Google Business details, sorted by category.
+          <p className="text-sm font-light text-gold/80 italic mt-4 tracking-wide max-w-lg mx-auto font-serif">
+            "Capturing the fleeting moments, raw emotions, and beautiful stories of your life, frozen in time."
           </p>
           <div className="h-[1px] w-16 bg-gold mx-auto mt-4" />
         </div>
@@ -201,11 +199,10 @@ export default function PortfolioDemo() {
                 setActiveCategory(category);
                 setLightboxIndex(null);
               }}
-              className={`px-4 py-2 text-[10px] md:text-xs uppercase tracking-[0.2em] font-medium transition-all duration-300 ${
-                activeCategory === category
+              className={`px-4 py-2 text-[10px] md:text-xs uppercase tracking-[0.2em] font-medium transition-all duration-300 ${activeCategory === category
                   ? 'bg-gold text-black border border-gold'
                   : 'text-white/60 border border-white/10 hover:border-gold hover:text-white'
-              }`}
+                }`}
             >
               {category}
             </button>
@@ -230,7 +227,7 @@ export default function PortfolioDemo() {
             >
               {/* Image */}
               <img
-                src={item.image}
+                src={`${item.image}?v=3`}
                 alt={item.title}
                 loading="lazy"
                 className="w-full h-full object-cover zoom-img select-none"
@@ -270,12 +267,16 @@ export default function PortfolioDemo() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-md p-4"
+            onClick={() => setLightboxIndex(null)}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4 cursor-zoom-out"
           >
             {/* Close Button */}
             <button
-              onClick={() => setLightboxIndex(null)}
-              className="absolute top-6 right-6 text-white/70 hover:text-gold transition-colors z-50 p-2"
+              onClick={(e) => {
+                e.stopPropagation();
+                setLightboxIndex(null);
+              }}
+              className="absolute top-6 right-6 text-white/70 hover:text-gold transition-colors z-50 p-2 cursor-pointer"
               aria-label="Close Lightbox"
             >
               <X className="w-6 h-6" />
@@ -283,8 +284,11 @@ export default function PortfolioDemo() {
 
             {/* Previous Button */}
             <button
-              onClick={handlePrev}
-              className="absolute left-6 text-white/50 hover:text-gold transition-colors z-50 p-2 max-sm:left-2"
+              onClick={(e) => {
+                e.stopPropagation();
+                handlePrev();
+              }}
+              className="absolute left-6 text-white/50 hover:text-gold transition-colors z-50 p-2 max-sm:left-2 cursor-pointer"
               aria-label="Previous Image"
             >
               <ChevronLeft className="w-10 h-10 max-sm:w-8 max-sm:h-8" />
@@ -292,22 +296,28 @@ export default function PortfolioDemo() {
 
             {/* Next Button */}
             <button
-              onClick={handleNext}
-              className="absolute right-6 text-white/50 hover:text-gold transition-colors z-50 p-2 max-sm:right-2"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleNext();
+              }}
+              className="absolute right-6 text-white/50 hover:text-gold transition-colors z-50 p-2 max-sm:right-2 cursor-pointer"
               aria-label="Next Image"
             >
               <ChevronRight className="w-10 h-10 max-sm:w-8 max-sm:h-8" />
             </button>
 
             {/* Lightbox Content */}
-            <div className="relative max-w-5xl max-h-[80vh] flex flex-col items-center">
+            <div
+              className="relative max-w-5xl max-h-[80vh] flex flex-col items-center cursor-default"
+              onClick={(e) => e.stopPropagation()}
+            >
               <motion.img
                 key={lightboxIndex}
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3 }}
-                src={filteredItems[lightboxIndex].image}
+                src={`${filteredItems[lightboxIndex].image}?v=3`}
                 alt={filteredItems[lightboxIndex].title}
                 className="max-w-full max-h-[70vh] object-contain shadow-2xl border border-white/5"
               />
