@@ -69,7 +69,7 @@ export default function About() {
             <div className="relative w-[300px] sm:w-[400px] h-[400px] sm:h-[520px] overflow-hidden bg-graybg">
               <img
                 src="/images/about_portrait.png"
-                alt="Harinee - Lead Photographer"
+                alt="Guna Sekaran - Lead Photographer"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 zoom-img"
               />
             </div>
