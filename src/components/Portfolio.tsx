@@ -105,7 +105,6 @@ const categories = [
   'Baby Shoot',
   'Maternity',
   'Fashion',
-  'Events',
   'Travel',
 ];
 

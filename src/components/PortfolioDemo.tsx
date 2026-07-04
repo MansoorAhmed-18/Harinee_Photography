@@ -15,64 +15,158 @@ interface PortfolioItem {
 
 const demoPortfolioItems: PortfolioItem[] = [
   {
-    id: 1,
-    title: 'Maathesh & Swetha\'s Union',
-    category: 'Wedding',
-    image: '/images/insta_wedding_1.jpg',
-    aspectRatio: 'h-[280px]',
-    source: 'Instagram',
-    likes: '412',
-    location: 'Chennai, ECR'
-  },
-  {
-    id: 2,
-    title: 'Love by the Waterfall',
-    category: 'Pre Wedding',
-    image: '/images/insta_prewedding_1.jpg',
-    aspectRatio: 'h-[280px]',
-    source: 'Instagram',
-    likes: '528',
-    location: 'Kerala'
-  },
-  {
-    id: 3,
-    title: 'Graceful Steps of Connection',
-    category: 'Couple Portraits',
-    image: '/images/insta_engagement_1.jpg',
-    aspectRatio: 'h-[280px]',
-    source: 'Instagram',
-    likes: '342',
-    location: 'Palavakkam Studio'
-  },
-  {
-    id: 4,
-    title: 'Circular Arch Engagement',
-    category: 'Events',
-    image: '/images/insta_couple_1.jpg',
-    aspectRatio: 'h-[280px]',
-    source: 'Instagram',
-    likes: '528',
-    location: 'Chennai Hall'
-  },
-  {
-    id: 5,
-    title: 'Temple Vows under the Gopuram',
-    category: 'Wedding',
-    image: '/images/insta_wedding_2.jpg',
+    id: 101,
+    title: 'Maternity Garden Silhouette',
+    category: 'Maternity',
+    image: '/images/portfolio_extracted/extracted_1.jpg',
     aspectRatio: 'h-[280px]',
     source: 'Studio',
-    location: 'Chennai Temple'
+    likes: '425',
+    location: 'Garden Studio'
   },
   {
-    id: 6,
-    title: 'Love Written In Every Page',
+    id: 102,
+    title: 'Canopy of Crimson Roses',
     category: 'Couple Portraits',
-    image: '/images/insta_couple_2.jpg',
-    aspectRatio: 'h-[300px]',
-    source: 'Instagram',
-    likes: '284',
-    location: 'Palavakkam Studio'
+    image: '/images/portfolio_extracted/extracted_2.jpg',
+    aspectRatio: 'h-[280px]',
+    source: 'Studio',
+    likes: '480',
+    location: 'Wedding Canopy'
   },
+  {
+    id: 103,
+    title: 'Gaze of Devotion',
+    category: 'Couple Portraits',
+    image: '/images/portfolio_extracted/extracted_3.jpg',
+    aspectRatio: 'h-[450px]',
+    source: 'Studio',
+    likes: '512',
+    location: 'Traditional Mandapam'
+  },
+  {
+    id: 104,
+    title: 'A Playful Embrace',
+    category: 'Couple Portraits',
+    image: '/images/portfolio_extracted/extracted_4.jpg',
+    aspectRatio: 'h-[450px]',
+    source: 'Studio',
+    likes: '640',
+    location: 'Traditional Mandapam'
+  },
+  {
+    id: 105,
+    title: 'Silent Whispers of Love',
+    category: 'Couple Portraits',
+    image: '/images/portfolio_extracted/extracted_5.jpg',
+    aspectRatio: 'h-[280px]',
+    source: 'Studio',
+    likes: '390',
+    location: 'Studio indoor'
+  },
+  {
+    id: 106,
+    title: 'The Groom\'s Reassurance',
+    category: 'Wedding',
+    image: '/images/portfolio_extracted/extracted_6.jpg',
+    aspectRatio: 'h-[280px]',
+    source: 'Studio',
+    likes: '430',
+    location: 'Lawn Reception'
+  },
+  {
+    id: 107,
+    title: 'Running with the Shore',
+    category: 'Pre Wedding',
+    image: '/images/portfolio_extracted/extracted_7.jpg',
+    aspectRatio: 'h-[280px]',
+    source: 'Studio',
+    likes: '580',
+    location: 'ECR Beach'
+  },
+  {
+    id: 108,
+    title: 'A Mother\'s Radiance',
+    category: 'Maternity',
+    image: '/images/portfolio_extracted/extracted_8.jpg',
+    aspectRatio: 'h-[280px]',
+    source: 'Studio',
+    likes: '345',
+    location: 'Garden Studio'
+  },
+  {
+    id: 109,
+    title: 'Grace in Maternity',
+    category: 'Maternity',
+    image: '/images/portfolio_extracted/extracted_9.jpg',
+    aspectRatio: 'h-[450px]',
+    source: 'Studio',
+    likes: '488',
+    location: 'Garden Archway'
+  },
+  
+  {
+    id: 111,
+    title: 'Sailing into Forever',
+    category: 'Pre Wedding',
+    image: '/images/portfolio_extracted/extracted_11.jpg',
+    aspectRatio: 'h-[280px]',
+    source: 'Studio',
+    likes: '520',
+    location: 'ECR Beach'
+  },
+  {
+    id: 112,
+    title: 'Under Mylapore Gopuram',
+    category: 'Wedding',
+    image: '/images/portfolio_extracted/extracted_12.jpg',
+    aspectRatio: 'h-[280px]',
+    source: 'Studio',
+    likes: '690',
+    location: 'Mylapore Temple'
+  },
+  {
+    id: 113,
+    title: 'Joy on the Heritage Swing',
+    category: 'Couple Portraits',
+    image: '/images/portfolio_extracted/extracted_13.jpg',
+    aspectRatio: 'h-[280px]',
+    source: 'Studio',
+    likes: '470',
+    location: 'Heritage Resort'
+  },
+  {
+    id: 114,
+    title: 'Hugs in Heritage Corridors',
+    category: 'Couple Portraits',
+    image: '/images/portfolio_extracted/extracted_14.jpg',
+    aspectRatio: 'h-[280px]',
+    source: 'Studio',
+    likes: '395',
+    location: 'Heritage Resort'
+  },
+  {
+    id: 115,
+    title: 'The Descending Bride',
+    category: 'Wedding',
+    image: '/images/portfolio_extracted/extracted_15.jpg',
+    aspectRatio: 'h-[450px]',
+    source: 'Studio',
+    likes: '610',
+    location: 'Heritage Resort'
+  },
+  {
+    id: 116,
+    title: 'Bridal Water Splashes',
+    category: 'Wedding',
+    image: '/images/portfolio_extracted/extracted_16.jpg',
+    aspectRatio: 'h-[450px]',
+    source: 'Studio',
+    likes: '585',
+    location: 'Traditional Pond'
+  },
+  
+  
   {
     id: 7,
     title: 'Black & White Ocean Love',
@@ -91,33 +185,7 @@ const demoPortfolioItems: PortfolioItem[] = [
     source: 'Google',
     location: 'Home Shoot, Chennai'
   },
-  {
-    id: 9,
-    title: 'Sunset Back to Back Silhouette',
-    category: 'Pre Wedding',
-    image: '/images/insta_event_1.jpg',
-    aspectRatio: 'h-[280px]',
-    source: 'Google',
-    location: 'Mahabalipuram'
-  },
-  {
-    id: 10,
-    title: 'Tranquil Water Splash Portrait',
-    category: 'Wedding',
-    image: '/images/insta_wedding_3.jpg',
-    aspectRatio: 'h-[360px]',
-    source: 'Instagram',
-    location: 'Palavakkam Studio'
-  },
-  {
-    id: 11,
-    title: 'Bridal Elegance on Steps',
-    category: 'Wedding',
-    image: '/images/insta_prewedding_2.jpg',
-    aspectRatio: 'h-[480px]',
-    source: 'Instagram',
-    location: 'Kerala'
-  },
+  
   {
     id: 12,
     title: 'Beachside Walk in Purple',
@@ -135,7 +203,8 @@ const categories = [
   'Pre Wedding',
   'Couple Portraits',
   'Baby Shoot',
-  'Events'
+  'Maternity',
+
 ];
 
 export default function PortfolioDemo() {

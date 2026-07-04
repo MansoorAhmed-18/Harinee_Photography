@@ -45,25 +45,17 @@ export default function Preloader({ onComplete }: PreloaderProps) {
         >
           <div className="text-center px-4">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="mb-2"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, ease: 'easeOut' }}
+              className="mb-6"
             >
-              <h1 className="text-3xl md:text-5xl font-light tracking-[0.25em] text-white text-serif uppercase">
-                Harinee
-              </h1>
-              <h2 className="text-xs md:text-sm font-light tracking-[0.4em] text-gold uppercase mt-2">
-                Photography
-              </h2>
+              <img
+                src="/logo.svg"
+                alt="Harinee Photography Logo"
+                className="h-32 md:h-44 w-auto mx-auto"
+              />
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.5 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="h-[1px] w-24 md:w-36 bg-gold/30 mx-auto my-6"
-            />
 
             <motion.p
               initial={{ opacity: 0 }}

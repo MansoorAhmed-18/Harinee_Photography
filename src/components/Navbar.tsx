@@ -72,14 +72,13 @@ export default function Navbar() {
               e.preventDefault();
               scrollToSection('#home');
             }}
-            className="flex flex-col group"
+            className="flex items-center group"
           >
-            <span className="text-xl md:text-2xl font-light tracking-[0.2em] text-white uppercase text-serif transition-colors duration-300 group-hover:text-gold">
-              Harinee
-            </span>
-            <span className="text-[9px] font-light tracking-[0.35em] text-gold uppercase -mt-0.5">
-              Photography
-            </span>
+            <img
+              src="/logo.svg"
+              alt="Harinee Photography Logo"
+              className="h-16 md:h-20 w-auto transition-transform duration-300 group-hover:scale-105"
+            />
           </a>
 
           {/* Desktop Links */}

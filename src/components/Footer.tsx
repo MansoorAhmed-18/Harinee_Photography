@@ -44,14 +44,13 @@ export default function Footer() {
               e.preventDefault();
               scrollToTop();
             }}
-            className="flex flex-col group w-fit"
+            className="flex items-center group w-fit"
           >
-            <span className="text-xl md:text-2xl font-light tracking-[0.2em] text-white uppercase text-serif transition-colors duration-300 group-hover:text-gold">
-              Harinee
-            </span>
-            <span className="text-[9px] font-light tracking-[0.35em] text-gold uppercase -mt-0.5">
-              Photography
-            </span>
+            <img
+              src="/logo.svg"
+              alt="Harinee Photography Logo"
+              className="h-16 md:h-20 w-auto transition-transform duration-300 group-hover:scale-105"
+            />
           </a>
           <p className="text-xs text-white/50 font-light leading-relaxed max-w-xs">
             Capturing luxury, cinematic, emotional, and timeless visual stories. Preserving your most cherished memories for generations.

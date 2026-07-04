@@ -68,7 +68,7 @@ export default function About() {
             <div className="absolute inset-4 border border-gold/40 z-10 translate-x-4 translate-y-4 transition-transform duration-500 hover:translate-x-2 hover:translate-y-2" />
             <div className="relative w-[300px] sm:w-[400px] h-[400px] sm:h-[520px] overflow-hidden bg-graybg">
               <img
-                src="/images/about_portrait.png"
+                src="/images/about harinee.png"
                 alt="Guna Sekaran - Lead Photographer"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 zoom-img"
               />
@@ -88,14 +88,19 @@ export default function About() {
               <span className="text-xs uppercase tracking-[0.3em] text-gold font-light block mb-3">
                 Behind The Lens
               </span>
+              <span>
               <h2 className="text-3xl md:text-5xl font-light text-white text-serif uppercase tracking-wide leading-tight">
-                About Guna Sekaran
-              </h2>
+                About Harinee Photography's Backbone
+              </h2></span>
               <div className="h-[1px] w-20 bg-gold mt-4" />
             </div>
 
             <p className="text-white/80 font-light leading-relaxed tracking-wide text-sm md:text-base">
-              Hi, I&apos;m Guna Sekaran, the creative heart behind Harinee Photography. For over eight years, I have had the absolute privilege of documenting the most beautiful, tender, and raw moments of life, milestones, and celebrations. We don&apos;t just take photos; we are visual storytellers who capture your love and joy in its truest, most artistic form.
+              Hello, I'm Guna Sekaran, founder of Harinee Photography.
+
+Photography has always been more than a profession for me—it's a passion for preserving moments that can never be recreated. Every smile, every emotion, and every celebration has a story, and I feel privileged to capture those memories for families to cherish forever.</p>
+
+<p className="text-white/80 font-light leading-relaxed tracking-wide text-sm md:text-base">I named this studio after my daughter, Harinee, because she has always been my inspiration. "Harinee Photography" is not just a business name; it represents my family's values of love, trust, and creating lasting memories. For over eight years, I have had the absolute privilege of documenting the most beautiful, tender, and raw moments of life, milestones, and celebrations. We don&apos;t just take photos; we are visual storytellers who capture your love and joy in its truest, most artistic form.
             </p>
 
             {/* Creative Philosophy Cards */}
