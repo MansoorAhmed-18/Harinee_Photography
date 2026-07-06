@@ -3,15 +3,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const slides = [
   {
-    image: '/images/wedding_hero_1.png',
+    image: 'public/images/first1.jpg.jpeg',
     animationClass: 'animate-kenburns-1',
   },
   {
-    image: '/images/wedding_hero_2.png',
+    image: '/images/portfolio_extracted/extracted_14.jpg',
     animationClass: 'animate-kenburns-2',
   },
   {
-    image: '/images/wedding_hero_3.png',
+    image: '/images/portfolio_extracted/extracted_16.jpg',
     animationClass: 'animate-kenburns-3',
   },
 ];
