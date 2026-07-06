@@ -8,12 +8,12 @@ const slides = [
     position: 'object-[65%_center] md:object-center',
   },
   {
-    image: '/images/2nd.jpeg',
+    image: '/images/2nd_optimized.jpg',
     animationClass: 'animate-kenburns-2',
     position: 'object-[65%_center] md:object-center',
   },
   {
-    image: '/images/3rd.jpeg',
+    image: '/images/3rd_optimized.jpg',
     animationClass: 'animate-kenburns-3',
     position: 'object-[65%_center] md:object-center',
   },
