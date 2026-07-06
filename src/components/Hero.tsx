@@ -5,14 +5,17 @@ const slides = [
   {
     image: '/images/first1.jpg',
     animationClass: 'animate-kenburns-1',
+    position: 'object-[65%_center] md:object-center',
   },
   {
-    image: '/images/portfolio_extracted/extracted_14.jpg',
+    image: '/images/second.jpg',
     animationClass: 'animate-kenburns-2',
+    position: 'object-[65%_center] md:object-center',
   },
   {
-    image: '/images/portfolio_extracted/extracted_16.jpg',
+    image: '/images/third.jpg',
     animationClass: 'animate-kenburns-3',
+    position: 'object-[65%_center] md:object-center',
   },
 ];
 
@@ -46,12 +49,19 @@ export default function Hero() {
             transition={{ duration: 1.5, ease: 'easeInOut' }}
             className="absolute inset-0 w-full h-full"
           >
-            <img
-              src={slides[current].image}
-              alt={`Wedding Hero Slide ${current + 1}`}
-              className={`w-full h-full object-cover object-[65%_center] md:object-center ${slides[current].animationClass}`}
-
-            />
+          <img
+  src={slides[current].image}
+  alt={`Wedding Hero Slide ${current + 1}`}
+  style={{
+  objectPosition:
+    current === 0
+      ? "65% center"
+      : current === 1
+      ? "50% 40%"
+      : "65% center",
+}}
+  className={`w-full h-full object-cover ${slides[current].animationClass}`}
+/>
             {/* Vignette & Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/50" />
             <div className="absolute inset-0 bg-radial-vignette opacity-60" />
