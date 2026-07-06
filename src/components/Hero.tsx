@@ -49,7 +49,8 @@ export default function Hero() {
             <img
               src={slides[current].image}
               alt={`Wedding Hero Slide ${current + 1}`}
-              className={`w-full h-full object-cover object-center ${slides[current].animationClass}`}
+              className={`w-full h-full object-cover object-[65%_center] md:object-center ${slides[current].animationClass}`}
+
             />
             {/* Vignette & Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/50" />
