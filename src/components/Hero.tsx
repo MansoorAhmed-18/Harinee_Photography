@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const slides = [
   {
-    image: '/images/first.png',
+    image: '/images/first1.jpg',
     animationClass: 'animate-kenburns-1',
   },
   {
