@@ -26,13 +26,16 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #050505;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #1f1f1f;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #D4AF37;
 }
@@ -73,8 +76,10 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Smooth Image hover transition */
@@ -88,9 +93,17 @@ body {
 
 /* Floating animation */
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .animate-float {
@@ -105,6 +118,7 @@ body {
 
 /* Custom Cursor Rules for Desktop */
 @media (pointer: fine) {
+
   html,
   body,
   a,
@@ -114,7 +128,7 @@ body {
   .zoom-img {
     cursor: none !important;
   }
-  
+
   /* Retain standard text caret cursor inside input fields for better UX */
   input,
   textarea,
@@ -140,5 +154,3 @@ textarea::placeholder {
   font-weight: 300;
   opacity: 0.5;
 }
-
-
