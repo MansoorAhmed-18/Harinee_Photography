@@ -60,7 +60,7 @@ export default function Hero() {
       ? "50% 40%"
       : "65% center",
 }}
-  className={`w-full h-full object-cover ${slides[current].animationClass}`}
+  className={`w-full h-full object-cover high-quality-img cg-warm-cinematic ${slides[current].animationClass}`}
 />
             {/* Vignette & Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/50" />

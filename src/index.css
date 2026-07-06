@@ -154,3 +154,38 @@ textarea::placeholder {
   font-weight: 300;
   opacity: 0.5;
 }
+
+/* Color Grading Presets */
+.cg-original {
+  filter: contrast(1.03) saturate(1.03) brightness(1.01);
+}
+
+.cg-warm-cinematic {
+  filter: sepia(0.18) contrast(1.06) saturate(1.12) brightness(1.02) hue-rotate(-6deg);
+}
+
+.cg-moody-vintage {
+  filter: contrast(1.14) saturate(0.8) brightness(0.95) sepia(0.18) hue-rotate(4deg);
+}
+
+.cg-emerald-dream {
+  filter: contrast(1.08) saturate(1.18) hue-rotate(12deg) brightness(1.01);
+}
+
+.cg-vibrant-gold {
+  filter: saturate(1.25) contrast(1.06) sepia(0.08) brightness(1.03);
+}
+
+.cg-monochrome {
+  filter: grayscale(1) contrast(1.28) brightness(0.96);
+}
+
+/* High Quality Image Rendering and details enhancement */
+.high-quality-img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}

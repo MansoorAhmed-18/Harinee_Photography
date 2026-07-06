@@ -207,9 +207,19 @@ const categories = [
 
 ];
 
+const colorGrades = [
+  { id: 'original', name: 'Original', desc: 'True natural tones', className: 'cg-original' },
+  { id: 'warm-cinematic', name: 'Cinematic Gold', desc: 'Warm cinematic sunset tones', className: 'cg-warm-cinematic' },
+  { id: 'moody-vintage', name: 'Moody Vintage', desc: 'Deep filmic tones', className: 'cg-moody-vintage' },
+  { id: 'emerald-dream', name: 'Emerald Garden', desc: 'Cool shadows & rich greens', className: 'cg-emerald-dream' },
+  { id: 'vibrant-gold', name: 'Vibrant Pop', desc: 'Bright, saturated warmth', className: 'cg-vibrant-gold' },
+  { id: 'monochrome', name: 'Fine Art B&W', desc: 'Classic monochrome contrast', className: 'cg-monochrome' },
+];
+
 export default function PortfolioDemo() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [currentColorGrade, setCurrentColorGrade] = useState('original');
 
   const filteredItems = activeCategory === 'All'
     ? demoPortfolioItems
@@ -260,7 +270,7 @@ export default function PortfolioDemo() {
         </div>
 
         {/* Categories Bar */}
-        <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 mb-16 overflow-x-auto pb-4 no-scrollbar">
+        <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 mb-8 overflow-x-auto pb-2 no-scrollbar">
           {categories.map((category) => (
             <button
               key={category}
@@ -276,6 +286,36 @@ export default function PortfolioDemo() {
               {category}
             </button>
           ))}
+        </div>
+
+        {/* Color Grading Presets Panel */}
+        <div className="mb-16 border border-white/5 bg-zinc-950/60 backdrop-blur-md p-5 rounded-xl max-w-4xl mx-auto shadow-xl">
+          <div className="text-center mb-3">
+            <span className="text-[9px] uppercase tracking-[0.3em] text-gold font-light block mb-0.5">
+              Live Color Finishes
+            </span>
+            <h3 className="text-xs uppercase tracking-[0.25em] font-medium text-white/90">
+              Color Grading Preset Room
+            </h3>
+            <p className="text-[9.5px] text-white/40 mt-1 font-light tracking-wide">
+              Click a finish to apply post-processing color grading filters to the photos in real time.
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-1.5 md:gap-2.5 overflow-x-auto pb-1 no-scrollbar">
+            {colorGrades.map((grade) => (
+              <button
+                key={grade.id}
+                onClick={() => setCurrentColorGrade(grade.id)}
+                className={`px-3 py-1.5 rounded-full text-[9px] uppercase tracking-[0.15em] font-medium transition-all duration-300 ${currentColorGrade === grade.id
+                    ? 'bg-gold text-black font-semibold shadow-md shadow-gold/20'
+                    : 'text-white/60 border border-white/10 hover:border-white/30 hover:text-white'
+                  }`}
+                title={grade.desc}
+              >
+                {grade.name}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Masonry Grid */}
@@ -299,7 +339,7 @@ export default function PortfolioDemo() {
                 src={`${item.image}?v=3`}
                 alt={item.title}
                 loading="lazy"
-                className="w-full h-full object-cover zoom-img select-none"
+                className={`w-full h-full object-cover zoom-img select-none transition-all duration-500 high-quality-img ${colorGrades.find(g => g.id === currentColorGrade)?.className || 'cg-original'}`}
               />
 
               {/* Tag indicator for source */}
@@ -388,7 +428,7 @@ export default function PortfolioDemo() {
                 transition={{ duration: 0.3 }}
                 src={`${filteredItems[lightboxIndex].image}?v=3`}
                 alt={filteredItems[lightboxIndex].title}
-                className="max-w-full max-h-[70vh] object-contain shadow-2xl border border-white/5"
+                className={`max-w-full max-h-[70vh] object-contain shadow-2xl border border-white/5 transition-all duration-500 high-quality-img ${colorGrades.find(g => g.id === currentColorGrade)?.className || 'cg-original'}`}
               />
 
               {/* Image Info at bottom */}
