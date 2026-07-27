@@ -78,7 +78,7 @@ export default function Hero() {
           className="max-w-4xl"
         >
           <span className="text-xs md:text-sm uppercase tracking-[0.4em] text-gold font-light mb-4 block">
-            The Visual Storytellers
+            Wedding & Portrait Photography studio in chennai
           </span>
 
           <h1 className="text-4xl sm:text-6xl md:text-8xl tracking-[0.2em] font-light text-white text-serif uppercase mb-6 drop-shadow-sm select-none">
@@ -87,6 +87,7 @@ export default function Hero() {
               Photography
             </span>
           </h1>
+          
 
           <p className="text-xs sm:text-sm md:text-base text-white/70 font-light tracking-[0.2em] max-w-xl mx-auto italic text-serif mb-10 select-none">
             &ldquo;Capture Every Emotion. Preserve Every Memory.&rdquo;
