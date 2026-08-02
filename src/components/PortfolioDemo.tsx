@@ -261,7 +261,7 @@ export default function PortfolioDemo() {
             Real Work Demo
           </span>
           <h2 className="text-3xl md:text-5xl font-light text-white text-serif uppercase tracking-wide">
-            PORTFOLIO
+            PORTFOLIO 
           </h2>
           <p className="text-sm font-light text-gold/80 italic mt-4 tracking-wide max-w-lg mx-auto font-serif">
             "Capturing the fleeting moments, raw emotions, and beautiful stories of your life, frozen in time."

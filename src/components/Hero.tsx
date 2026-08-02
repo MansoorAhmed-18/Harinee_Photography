@@ -49,19 +49,19 @@ export default function Hero() {
             transition={{ duration: 1.5, ease: 'easeInOut' }}
             className="absolute inset-0 w-full h-full"
           >
-          <img
-  src={slides[current].image}
-  alt={`Wedding Hero Slide ${current + 1}`}
-  style={{
-  objectPosition:
-    current === 0
-      ? "65% center"
-      : current === 1
-      ? "50% 40%"
-      : "65% center",
-}}
-  className={`w-full h-full object-cover high-quality-img cg-warm-cinematic ${slides[current].animationClass}`}
-/>
+            <img
+              src={slides[current].image}
+              alt={`Wedding Hero Slide ${current + 1}`}
+              style={{
+                objectPosition:
+                  current === 0
+                    ? "65% center"
+                    : current === 1
+                      ? "50% 40%"
+                      : "65% center",
+              }}
+              className={`w-full h-full object-cover high-quality-img cg-warm-cinematic ${slides[current].animationClass}`}
+            />
             {/* Vignette & Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/50" />
             <div className="absolute inset-0 bg-radial-vignette opacity-60" />
@@ -77,17 +77,17 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.5 }}
           className="max-w-4xl"
         >
-          <span className="text-xs md:text-sm uppercase tracking-[0.4em] text-gold font-light mb-4 block">
-            Wedding & Portrait Photography studio in chennai
-          </span>
+          <h1 className="text-xs md:text-sm uppercase tracking-[0.4em] text-gold font-light mb-4 block">
+            Professional Photographer in chennai
+          </h1>
 
-          <h1 className="text-4xl sm:text-6xl md:text-8xl tracking-[0.2em] font-light text-white text-serif uppercase mb-6 drop-shadow-sm select-none">
+          <h2 className="text-4xl sm:text-6xl md:text-8xl tracking-[0.2em] font-light text-white text-serif uppercase mb-6 drop-shadow-sm select-none">
             Harinee
             <span className="block text-xl sm:text-3xl md:text-4xl tracking-[0.35em] text-gold/90 mt-4">
               Photography
             </span>
-          </h1>
-          
+          </h2>
+
 
           <p className="text-xs sm:text-sm md:text-base text-white/70 font-light tracking-[0.2em] max-w-xl mx-auto italic text-serif mb-10 select-none">
             &ldquo;Capture Every Emotion. Preserve Every Memory.&rdquo;

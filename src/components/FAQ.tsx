@@ -90,7 +90,7 @@ export default function FAQ() {
             Common Inquiries
           </span>
           <h2 className="text-3xl md:text-5xl font-light text-white text-serif uppercase tracking-wide">
-            FAQ
+            FAQ OF BEST PHOTOGRAPHER
           </h2>
           <div className="h-[1px] w-16 bg-gold mx-auto mt-4" />
         </div>
